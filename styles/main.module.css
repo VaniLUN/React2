@@ -1,0 +1,39 @@
+#main{
+    height: 120px;
+    background-color: orange;
+    position: relative;
+}
+.button{
+    position: relative;
+    text-align: center;
+    display: block;
+    height: 50px;
+    width: 100px;
+    outline: none;
+    text-decoration: none;
+    font: inherit;
+    /* border: 0 1px 0 0 solid; */
+    border-right: 1px solid;
+}
+.button:hover{
+    background-color: rgb(166, 108, 0);
+    color: rgb(213, 213, 213);
+  border-right: 1px solid #000; /* Цвет и стиль бордера */
+}
+.button:focus, .button:active {
+    outline: none; /* Убирает обводку при фокусе */
+    color: inherit; /* Наследует цвет родительского элемента */
+    background: none; /* Убирает фон */
+    text-decoration: none; /* Убирает подчеркивание */
+  }
+#navigation{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* border: 1px 0 1px 1px solid; */
+    border-top: 1px solid; /* Верхняя граница */
+    border-bottom: 1px solid; /* Нижняя граница */
+    border-left: 1px solid; /* Левая граница */
+}
